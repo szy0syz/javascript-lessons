@@ -255,35 +255,35 @@ if (pattern.test(text)){
 
 ``` javascript
 // 挑战一：数字
-var pattern1 = null;  // 补全该正则表达式
+var pattern1 = /\d{3}/;  // 补全该正则表达式
 console.log(pattern1.test('123')); // true
 console.log(pattern1.test('abc')); // false
 ```
 
 ``` javascript
 // 挑战二：3位的数字
-var pattern2 = null;  // 补全该正则表达式
+var pattern2 = /\d{3}/;  // 补全该正则表达式
 console.log(pattern2.test('123'));  // true
 console.log(pattern2.test('1234')); // false
 ```
 
 ``` javascript
 // 挑战三：至少3位的数字
-var pattern3 = null;  // 补全该正则表达式
+var pattern3 = /\d{3,}/;  // 补全该正则表达式
 console.log(pattern3.test('1234')); // true
 console.log(pattern3.test('12'));   // false
 ```
 
 ``` javascript
 // 挑战四：3-5位的数字
-var pattern4 = null;  // 补全该正则表达式
+var pattern4 = /\d{3,5}/;  // 补全该正则表达式
 console.log(pattern4.test('1234')); // true
 console.log(pattern4.test('1'));    // false
 ```
 
 ``` javascript
 // 挑战五：由26个英文字母组成的字符串
-var pattern5 = null;  // 补全该正则表达式
+var pattern5 = /([a-z|A-Z]*)/;  // 补全该正则表达式
 console.log(pattern5.test('abc'));  // true
 console.log(pattern5.test('1abc')); // false
 ```
