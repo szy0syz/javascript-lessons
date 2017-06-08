@@ -315,7 +315,7 @@ sayColor.call(o);          // blue
 ``` javascript
 // 挑战一，合并任意个数的字符串
 var concat = function(){
-    // 待实现方法体
+    return [].__proto__.slice.call(arguments).join("")
 }
 console.log(concat('st','on','e'));  // stone
 ```
@@ -323,7 +323,11 @@ console.log(concat('st','on','e'));  // stone
 ``` javascript
 // 挑战二，输出指定位置的斐波那契数列
 var fioacciSequece = function(count){
-    // 待实现方法体
+    var arr = [0, 1]
+    for (i = 2; i < count; i++) {
+        arr.push(arr[i-2] + arr [i-1])
+    }
+    return arr.join('、')
 }
 console.log(fioacciSequece(12));  // 0、1、1、2、3、5、8、13、21、34、55、89
 ```

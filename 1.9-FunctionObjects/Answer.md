@@ -26,7 +26,7 @@ var fioacciSequece = function(count){
 console.log(fioacciSequece(12));  // 0、1、1、2、3、5、8、13、21、34、55、[89]
 ```
 
-```
+```javascript
 // 挑战三，三维数组或 n 维数组去重，使用 arguments 重写
 var arr = [2,3,4,[2,3,[2,3,4,2],5],3,5,[2,3,[2,3,4,2],2],4,3,6,2];
 var unique = function(arr) {
